@@ -26,9 +26,9 @@ class Sieve
 	{
 	    if (e[j])
 	    {
-		for (int p = j+j; p<=max; p+=j)
+		for (int i=2; i*j<=max; i++)
 		{
-		    e[p] = false;
+		    e[i*j] = false;
 		} // for
 	    } // if
 	} // for
