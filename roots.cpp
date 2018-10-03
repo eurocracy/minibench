@@ -2,7 +2,7 @@
 #include <math.h>
 
 // Constant definitions
-const long max_roots = 10000000L;
+const long max_roots = 1000000L;
 const float prec[10]= {\
 	1.0,\
 	0.1,\
@@ -35,7 +35,7 @@ float root(float val, int places) {
 
     //Main root calculation
     do {
-	diff=(r*r-val)/(2*r);
+	diff=(r*r-val)/(r+r);
 	r-=diff;
     } while (diff>=p2);
     return r;
