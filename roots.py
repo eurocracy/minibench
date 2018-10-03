@@ -1,6 +1,7 @@
 #!/usr/bin/pypy
 
-MaxRoots = 1000000
+MaxRoots = 10000000
+
 prec = [ 1.0,
 	0.1,
 	0.01,

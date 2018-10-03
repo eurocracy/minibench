@@ -18,6 +18,8 @@ Includes:
 
 **roots.py** - python version of roots.cpp
 
+**roots2.py** - roots.py using python sqrt function
+
 **sieve.py** - python verson of Sieve
 
 **droot.cpp** - *double* precision version of roots.cpp
