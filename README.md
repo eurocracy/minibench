@@ -9,11 +9,17 @@ A small collection of benchmarks intended for single board computers
 Includes:
 
 **Mersenne.java** - calculates Mersenne primes using a power of 2.
+
 **Sieve.java, Sieve.cpp** - Sieve of erastosthenes for numbers up to 10,000,000
+
 **roots.cpp** - calculates square root to n decimal places of every integer up to 10,000,000 using Newton's method
+
 **Sieve1a.cpp** - faster sieve which uses addition rather than multiplication in the innermost loop
+
 **roots.py** - python version of roots.cpp
+
 **sieve.py** - python verson of Sieve
+
 **droot.cpp** - *double* precision version of roots.cpp
 
 ##Getting started:
