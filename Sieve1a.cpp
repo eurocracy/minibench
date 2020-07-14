@@ -5,7 +5,7 @@
 using namespace std;
 
 //Constants
-const long MaxInteger = 100000000;
+const long MaxInteger = 1000000000;
 
 //Global variables
 bool e[MaxInteger];
