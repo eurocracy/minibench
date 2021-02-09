@@ -5,7 +5,7 @@
 using namespace std;
 
 //Constants
-const long MaxInteger = 100000000;
+const long MaxInteger = 1000000001;
 
 //Global variables
 bool e[MaxInteger];
@@ -16,8 +16,7 @@ class Sieve
     public:static bool dgsieve(long max)
     {
 
-	e[1] = true;
-	for (int i = 2; i <= max; i++)
+	for (int i = 1; i <= max; i++)
 	{
 	    e[i] = true;
 	} //for

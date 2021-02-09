@@ -2,7 +2,7 @@
 #include <math.h>
 
 // Constant definitions
-const long max_roots = 10000000L;
+const long max_roots = 100000000L;
 const float prec[10]= {\
 	1.0,\
 	0.1,\

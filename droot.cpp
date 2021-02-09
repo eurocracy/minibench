@@ -1,8 +1,16 @@
 /* include files */
 #include <math.h>
+#include <iostream>
+
+using namespace std;
+
+
+// Global variables
+long ops_count = 0L;
+
 
 // Constant definitions
-const long max_roots = 10000000L;
+const long max_roots = 100000000L;
 const double prec[10]= {\
 	1.0,\
 	0.1,\
@@ -37,14 +45,19 @@ double root(double val, int places) {
     do {
 	diff=(r*r-val)/(2*r);
 	r-=diff;
+	ops_count += 1L;
     } while (diff>=p2);
     return r;
 } // root
 
 int main(int argc, char *arv[])
 {
-    for (long l=0L; l<max_roots;l++)
+    for (long l=0L; l<max_roots;l++) 
+    {
 	roots[l] = root((double)(l+1L),3);
+    } // for
+
+    cout << "Ops Cout"<<ops_count<<'\n';
 
     return (0);
 
